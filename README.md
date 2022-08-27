@@ -1,2 +1,2 @@
 # DSA-LoveBaBar
-here i started learning DSA with C++ 
+here i start learning DSA with C++ 
