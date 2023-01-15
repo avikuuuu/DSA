@@ -1,24 +1,26 @@
-#include<iostream>
+// C++ Program to Count Number of Digits in a Number
+#include <iostream>
+#include<math.h>
 using namespace std;
 
 int main(){
-
-   int n,i,j;
-
-   cin>>n;
-   i=1;
    
-   while(i<=n){
-      j=1;
-      char ch='a';
-      while(j<=n){
-         char vb=ch+i+j-2;
-         cout<<vb<<" ";
-         j++;
-      }
-      cout<<endl;
-      i++;  
-   }
+ int n,i,digit,ans;
 
+  cin>>n;
+  i=0;
+  ans=0;
+ while (n !=0)
+ {
+  digit=n%10;
 
-}
+  if(digit == 1){
+    ans = ans +(digit *pow(2,i));
+  }
+  i++;
+  n=n/10;
+
+ }
+ cout<<"the binary is "<<ans<<endl;
+ 
+ }
