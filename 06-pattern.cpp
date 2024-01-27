@@ -6,13 +6,15 @@ int main()
     int n = 6, i;
     i = 1;
     int j=1;
+    int p=1;
  
     while (i <= n)
     {
-        // j=1;
+        j=1;
        while (j<=i)
        {
-        cout<<i<<" ";
+        cout<<p<<" ";
+        p++;
         j++;
        }
        cout<<endl;
