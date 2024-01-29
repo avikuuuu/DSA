@@ -9,8 +9,8 @@ int main(){
     while (n)
     {
         int Lastdigit=n%10;
-        // ans=(ans*10)+Lastdigit;
-        ans=(Lastdigit*pow(10,i))+ans;
+        ans=(ans*10)+Lastdigit;
+        // ans=(Lastdigit*pow(10,i))+ans;
         n /=10;
         i++;
     }
