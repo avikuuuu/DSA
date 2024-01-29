@@ -1,27 +1,21 @@
-|   x   |   y   | AND(&) | OR(|) | NOT(~) | XOR(^) |
-|-------|-------|--------|-------|--------|--------|
-|   0   |   0   |   0    |   0   | REVERT |   0    |
-|   0   |   1   |   0    |   1   |        |   1    |
-|   1   |   0   |   0    |   1   |        |   1    |
-|   1   |   1   |   1    |   1   |        |   0    |
+## Logical Bitwise Operations:
 
+### AND (&), OR (|), NOT (~), XOR (^)
 
+|   x   |   y   | AND (&) | OR (|) | NOT (~) | XOR (^) |
+|-------|-------|---------|--------|---------|---------|
+|   0   |   0   |    0    |   0    | REVERT  |    0    |
+|   0   |   1   |    0    |   1    |         |    1    |
+|   1   |   0   |    0    |   1    |         |    1    |
+|   1   |   1   |    1    |   1    |         |    0    |
 
-Left shift & right shift   (left= <<  & Right= >>)
------------------------------>>>>
-where bits of any number are use to shift from there origin to towards shift side according to given number 
+### Left Shift (<<) & Right Shift (>>):
 
-Left Shift (<<):
-- The bits of a number are shifted towards the left.
-- Each bit position is increased by a power of 2 according to the given number.
-- It effectively multiplies the original number by 2 raised to the power of the specified shift count.
+- **Left Shift (`<<`):** The bits of a number are shifted towards the left. Each bit position is increased by a power of 2 according to the given number. It effectively multiplies the original number by 2 raised to the power of the specified shift count.
 
-Right Shift (>>):
-- The bits of a number are shifted towards the right.
-- Each bit position is decreased by a power of 2 according to the given number.
-- It effectively divides the original number by 2 raised to the power of the specified shift count.
- 
+- **Right Shift (`>>`):** The bits of a number are shifted towards the right. Each bit position is decreased by a power of 2 according to the given number. It effectively divides the original number by 2 raised to the power of the specified shift count.
 
+## Operator Precedence:
 
 | Precedence | Operators                     | Description                        |
 |------------|-------------------------------|------------------------------------|
@@ -38,6 +32,8 @@ Right Shift (>>):
 | 11         | &&                            | Logical AND                        |
 | 12         | \|\|                          | Logical OR                         |
 | 13         | ? :                           | Conditional operator               |
-| 14         |= += -= *= /= %= &=            | Assignment operators               |
-|            |   ^= |= <<= >>=               |                                    |
+| 14         | = += -= *= /= %= &=           | Assignment operators               |
+|            |   ^= \| = <<= >>=             |                                    |
 | 15         | ,                             | Comma operator                     |
+
+
