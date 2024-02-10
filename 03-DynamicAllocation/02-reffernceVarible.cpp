@@ -11,6 +11,10 @@ int& f(int n) {
 	return a;
 }
 
+
+
+
+to the 
 // bad practice
 int* f2() {
 	int i = 10;
